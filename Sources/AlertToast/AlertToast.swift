@@ -298,7 +298,7 @@ public struct AlertToast: View{
                 }
                 
                 if title != nil || subTitle != nil{
-                    VStack(alignment: type == .regular ? .center : .leading, spacing: 2){
+                    VStack(alignment: .center, spacing: 2){
                         if title != nil{
                             Text(LocalizedStringKey(title ?? ""))
                                 .font(style?.titleFont ?? Font.body.bold())
