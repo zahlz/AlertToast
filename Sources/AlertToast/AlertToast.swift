@@ -303,12 +303,14 @@ public struct AlertToast: View{
                             Text(LocalizedStringKey(title ?? ""))
                                 .font(style?.titleFont ?? Font.body.bold())
                                 .multilineTextAlignment(.center)
+                                .lineLimit(nil)
                                 .textColor(style?.titleColor ?? nil)
                         }
                         if subTitle != nil{
                             Text(LocalizedStringKey(subTitle ?? ""))
                                 .font(style?.subTitleFont ?? Font.footnote)
                                 .opacity(0.7)
+                                .lineLimit(nil)
                                 .multilineTextAlignment(.center)
                                 .textColor(style?.subtitleColor ?? nil)
                         }
