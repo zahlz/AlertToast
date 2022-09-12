@@ -317,7 +317,6 @@ public struct AlertToast: View{
                     }
                 }
             }
-//            .fixedSize(horizontal: true, vertical: false)
             .padding(.horizontal, 24)
             .padding(.vertical, 8)
             .frame(minHeight: 50)
